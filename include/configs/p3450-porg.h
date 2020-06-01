@@ -74,5 +74,10 @@
 
 /* Turn SDMMC1 off in early init on Porg/Nano */
 #define CONFIG_DISABLE_SDMMC1_EARLY
+#define CONFIG_AES
+#define CONFIG_CMD_AES
+#define CONFIG_CMD_HASH
+#define CONFIG_KDF
+#define CONFIG_CMD_KDF
 
 #endif /* _P3450_PORG_H */

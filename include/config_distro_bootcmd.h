@@ -397,7 +397,7 @@
 		"done\0"
 
 #ifndef CONFIG_BOOTCOMMAND
-#define CONFIG_BOOTCOMMAND "run distro_bootcmd"
+#define CONFIG_BOOTCOMMAND "bootlinux"
 #endif
 
 #endif  /* _CONFIG_CMD_DISTRO_BOOTCMD_H */

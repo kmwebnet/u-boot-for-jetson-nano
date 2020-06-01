@@ -602,7 +602,12 @@ UBOOTINCLUDE    := \
 		$(if $(CONFIG_SYS_THUMB_BUILD), $(if $(CONFIG_HAS_THUMB2),, \
 			-I$(srctree)/arch/$(ARCH)/thumb1/include),) \
 		-I$(srctree)/arch/$(ARCH)/include \
-		-include $(srctree)/include/linux/kconfig.h
+		-I$(CURDIR)/lib/kdf/cryptoauthlib/lib \
+		-I$(CURDIR)/include \
+		-I$(CURDIR)/include/linux \
+		-include $(srctree)/include/linux/kconfig.h \
+		-DCONFIG_USE_STDINT \
+		-DATCA_HAL_I2C
 
 NOSTDINC_FLAGS += -nostdinc -isystem $(shell $(CC) -print-file-name=include)
 CHECKFLAGS     += $(NOSTDINC_FLAGS)
