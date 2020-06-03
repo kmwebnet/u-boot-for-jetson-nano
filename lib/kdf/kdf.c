@@ -126,7 +126,7 @@ void cryptofunc (void)
 
     //source file name 
 
-    #define SRCDTB "/boot/tegra210-p3448-0000-p3449-0000-a02-user-custom.dtb"
+    #define SRCDTB "/boot/tegra210-p3448-0000-p3449-0000-b00-user-custom.dtb"
     #define SRCINITRD "/boot/initrd.img-4.9.140-tegra"
     #define SRCKERNEL "/boot/Image"
 
